@@ -1,4 +1,5 @@
 {
+  "homepage": "http://labibaiqbal.github.io/ClickGram",
   "name": "clickgram",
   "version": "0.1.0",
   "private": true,
@@ -9,6 +10,7 @@
     "firebase": "^8.10.1",
     "framer-motion": "^4.1.3",
     "get-image-colors": "^4.0.0",
+    "gh-pages": "^4.0.0",
     "react": "^16.13.1",
     "react-blob": "^2.1.0",
     "react-color-extractor": "^1.1.2",
@@ -17,6 +19,8 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
+    "pre deploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
